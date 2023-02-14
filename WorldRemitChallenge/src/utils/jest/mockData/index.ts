@@ -1,0 +1,30 @@
+const mockUser: IUser = {
+  display_name: 'Sive',
+  profile_image: '',
+  reputation: 10000,
+  account_id: 0,
+  accept_rate: 0,
+  badge_counts: {
+    bronze: 0,
+    silver: 0,
+    gold: 0,
+  },
+  creation_date: 123455,
+  is_blocked: false,
+  is_employee: true,
+  is_following: false,
+  last_access_date: 123456,
+  last_modified_date: 123456,
+  link: 'hello',
+  location: 'location',
+  reputation_change_day: 14,
+  reputation_change_month: 12,
+  reputation_change_quarter: 1,
+  reputation_change_week: 2,
+  reputation_change_year: 33,
+  user_id: 9,
+  user_type: 'new',
+  website_url: 'hello',
+};
+
+export { mockUser };

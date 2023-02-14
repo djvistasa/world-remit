@@ -7,6 +7,7 @@
     "ios": "react-native run-ios --simulator='iPhone 14 Pro Max'",
     "start": "react-native start",
     "test": "jest",
+    "test:coverage": "jest --collectCoverage --watch",
     "lint": "eslint .",
     "generate": "plop --plopfile scaffolding/generators/index.js"
   },
@@ -22,20 +23,21 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "@tsconfig/react-native": "^2.0.3",
     "@types/axios": "^0.14.0",
-    "@types/jest": "^29.4.0",
+    "@types/jest": "^27.4.1",
     "@types/react": "^18.0.27",
     "@types/react-native": "^0.71.2",
     "@types/react-test-renderer": "^18.0.0",
+    "@testing-library/jest-native": "^4.0.4",
+    "@testing-library/react-native": "^9.0.0",
     "@types/styled-components-react-native": "^5.2.1",
-    "babel-jest": "^26.6.3",
+    "babel-jest": "^27.5.1",
     "eslint": "7.14.0",
-    "jest": "^26.6.3",
+    "jest": "^27.5.1",
     "metro-react-native-babel-preset": "^0.64.0",
     "plop": "^3.1.1",
     "react-test-renderer": "17.0.1",
+    "ts-jest": "^27.1.3",
+    "jest-junit": "^13.0.0",
     "typescript": "^4.9.5"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }

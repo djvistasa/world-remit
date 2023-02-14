@@ -22,11 +22,12 @@ function UsersList({
       <FlatList
         data={users}
         ListEmptyComponent={!isInitialFetch ? <NoUsersFound /> : null}
-        renderItem={({ item }) => (
+        renderItem={({ item, index }) => (
           <User
             user={item}
             onBlockStatusChange={onBlockStatusChange}
             onFollowStatusChange={onFollowStatusChange}
+            testId={`user-item-${index}`}
           />
         )}
       />
