@@ -28,6 +28,7 @@ function User({
   },
   onFollowStatusChange,
   onBlockStatusChange,
+  testId,
 }: IUserProps): JSX.Element {
   const [isDetailsShown, setIsDetailsShown] = useState<boolean>();
 
@@ -47,7 +48,10 @@ function User({
   };
 
   return (
-    <StyledUser onPress={() => toggleDetails()} disabled={is_blocked}>
+    <StyledUser
+      onPress={() => toggleDetails()}
+      disabled={is_blocked}
+      testID={testId}>
       <StyledUserInfoContainer>
         <StyledProfileImage
           source={{
@@ -60,14 +64,16 @@ function User({
         </StyledUserInfo>
       </StyledUserInfoContainer>
       {isDetailsShown && !is_blocked && (
-        <StyledUserActions>
+        <StyledUserActions testID="user-actions">
           <Button
             title={is_following ? 'Unfollow' : 'Follow'}
             onPress={() => handleFollowStatusChange(account_id, !is_following)}
+            testID="follow-button"
           />
           <Button
             title="Block"
             onPress={() => handleBlockStatusChange(account_id, !is_blocked)}
+            testID="block-button"
           />
         </StyledUserActions>
       )}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" errors="0" time="2.851">
+  <testsuite name="src/components/noUsersFound/__tests__/noUsersFound.test.js" errors="0" failures="0" skipped="0" timestamp="2023-02-14T07:32:40" time="0.881" tests="1">
+    <testcase classname="-does component render" name="-does component render" time="0.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/components/applicationWrapper/__tests__/applicationWrapper.test.js" errors="0" failures="0" skipped="0" timestamp="2023-02-14T07:32:40" time="0.875" tests="1">
+    <testcase classname="-does component render" name="-does component render" time="0.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/components/usersList/__tests__/usersList.test.js" errors="0" failures="0" skipped="0" timestamp="2023-02-14T07:32:40" time="1.303" tests="2">
+    <testcase classname="-does component render" name="-does component render" time="0.133">
+    </testcase>
+    <testcase classname="-does view handle no users render" name="-does view handle no users render" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/components/user/__tests__/user.test.tsx" errors="0" failures="0" skipped="0" timestamp="2023-02-14T07:32:40" time="1.338" tests="4">
+    <testcase classname="-does component render" name="-does component render" time="0.036">
+    </testcase>
+    <testcase classname="-does user item expand to reveal buttons" name="-does user item expand to reveal buttons" time="0.07">
+    </testcase>
+    <testcase classname="-is user able to follow" name="-is user able to follow" time="0.033">
+    </testcase>
+    <testcase classname="-is user able to block" name="-is user able to block" time="0.043">
+    </testcase>
+  </testsuite>
+</testsuites>
